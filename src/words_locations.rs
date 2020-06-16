@@ -236,9 +236,7 @@ pub fn words() -> Vec<&'static str> {
 	Nebraska
 	Needles
 	Nevada
-	NevadaCity
 	NewHampshire
-	NewJersey
 	NewMexico
 	NewOrleans
 	NewYork
@@ -415,7 +413,6 @@ pub fn words() -> Vec<&'static str> {
 	Westminster
 	Westmorland
 	Wheatland
-	Wheelchair
 	Whitecaps
 	Whittier
 	Wichita
