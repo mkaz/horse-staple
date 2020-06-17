@@ -1,7 +1,9 @@
 
 pub fn words() -> Vec<&'static str> {
 
-	let w = "almond
+	let w = "ale
+	almond
+	apple
 	apples
 	apricot
 	avocado
@@ -11,32 +13,47 @@ pub fn words() -> Vec<&'static str> {
 	beans
 	beef
 	beer
+	beet
 	berry
+	brandy
 	bread
+	butter
 	cabbage
 	cafe
 	cake
+	candy
 	carrot
+	celery
 	cheese
+	cherry
+	chicken
 	chips
+	cider
 	clams
+	cod
 	coffee
+	cola
 	corn
 	cookies
 	crab
+	cream
 	cupcakes
 	cereal
 	dates
 	duck
 	donuts
+	egg
 	eggs
 	eel
+	fig
 	fish
+	flour
 	garlic
+	gin
 	ginger
 	goose
 	granola
-	graphes
+	grapes
 	grits
 	gumbo
 	ham
@@ -48,19 +65,90 @@ pub fn words() -> Vec<&'static str> {
 	jerky
 	juice
 	kale
+	kidney
 	kiwi
+	lamb
+	leek
 	lemon
+	lettuce
 	lime
+	liver
 	lobster
+	mango
+	meat
+	melon
 	milk
+	mushroom
+	noodle
 	noodles
-	pizza
+	nuts
+	oil
+	orange
+	pancake
 	pancakes
+	pastry
+	peach
+	peanut
+	pear
+	peas
+	pepper
+	peppers
+	pie
+	pineapple
+	pizza
+	plum
+	pork
+	prunes
+	rice
+	rolls
+	rum
+	salad
+	salmon
+	salt
+	seed
+	seeds
+	soup
 	spinach
+	strawberry
+	sugar
+	tea
 	toast
+	trout
+	tuna
+	turkey
+	veal
 	waffles
+	walnut
 	wine
-	yogurt";
+	vodka
+	yeast
+	yogurt
+	fresh
+	rotten
+	juicy
+	ripe
+	tender
+	tough
+	bland
+	poor
+	horrible
+	sweet
+	salty
+	sour
+	tasty
+	spicy
+	hot
+	mild
+	bake
+	boil
+	fry
+	grill
+	roast
+	steam
+	recipe
+	cook
+	strong
+	weak";
 
 	return w.lines().collect();
 }

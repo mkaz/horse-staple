@@ -2,7 +2,6 @@
 pub fn words() -> Vec<&'static str> {
 
 	let w = "amber
-	apricot
 	aqua
 	black
 	blue
