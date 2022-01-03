@@ -17,23 +17,12 @@ fn main() {
         .author("Marcus Kazmierczak")
         .arg(
             Arg::new("length")
-                .about("Number of words")
                 .short('l')
                 .long("length")
                 .takes_value(true),
         )
-        .arg(
-            Arg::new("digits")
-                .about("Include numbers")
-                .short('d')
-                .long("digits"),
-        )
-        .arg(
-            Arg::new("kids")
-                .about("Simple adj + noun password")
-                .short('k')
-                .long("kids"),
-        )
+        .arg(Arg::new("digits").short('d').long("digits"))
+        .arg(Arg::new("kids").short('k').long("kids"))
         .get_matches();
 
     let mut pass: Vec<String> = Vec::new();
@@ -43,7 +32,7 @@ fn main() {
 
     if matches.is_present("kids") {
         if matches.is_present("digits") {
-            let num: i32 = rand::thread_rng().gen_range(1, 100);
+            let num: i32 = rand::thread_rng().gen_range(1..100);
             pass.push(num.to_string());
         }
 
@@ -86,7 +75,7 @@ fn main() {
         }
 
         if matches.is_present("digits") {
-            let num: i32 = rand::thread_rng().gen_range(1, 1000);
+            let num: i32 = rand::thread_rng().gen_range(1..1000);
             pass.push(num.to_string());
         }
     }
